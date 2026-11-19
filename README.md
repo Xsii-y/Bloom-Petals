@@ -3,7 +3,7 @@
 Site vitrine réalisé dans le cadre de ma formation en développement web à **La Plateforme_**.  
 **Bloom Petals** est une entreprise fictive spécialisée dans la création de bouquets floraux sur mesure pour les événements professionnels et particuliers.
 
-🔗 **[Voir le site en ligne (GitHub Pages)]([[https://xsii-y.github.io/Bloom-Petals/](https://xsii-y.github.io/Bloom-Petals/)])**
+🔗 **[Voir le site en ligne (GitHub Pages)](https://xsii-y.github.io/Bloom-Petals/)**
 
 ---
 
