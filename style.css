@@ -1,0 +1,258 @@
+#service ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-between;
+    padding: 0px;
+}
+
+#service ul li {
+    flex: 1;
+    margin: 10px;
+    padding: 10px;
+}
+
+#service ul li h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+body {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #faf8f5;
+    color: #333333;
+    font-size: 20px;
+}
+
+main h1 img {
+    text-align: center;
+    margin-bottom: 20px;
+    width: 50%
+    ;
+}
+
+main {
+    text-align: center;
+    
+}
+
+
+header {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #195c1d;
+    padding: 20px;
+
+}
+
+a {
+    color: #FAF8F5;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#photo {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#photo img {
+    width: 30%;
+    height: auto;
+    border-radius: 10px;
+}
+
+html {
+    overflow-y: scroll;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between; /* Pousse le texte à gauche et l'image tout à droite */
+  align-items: center;            /* Centre verticalement */
+  padding: 15px 30px;
+  background-color: #195c1d;      /* Espace intérieur de la barre verte */
+  color: #FAF8F5;                  /* Couleur du texte */
+}
+
+footer img {
+  height: 40px;  /* Réduit la taille du logo en petit (ajustez à 30px ou 50px si besoin) */
+  width: auto;   /* Garde les bonnes proportions sans déformer */
+}
+
+#Engagement {
+    text-align: left;
+    
+}
+
+
+#photo-equipe {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px
+}
+
+#photo-equipe img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+#description-employer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colonnes identiques */
+    gap: 15px; /* Même espace entre les colonnes */
+}
+
+#contact {
+    max-width: 400px;
+    margin: 30px auto;
+    text-align: left;
+}
+
+#contact h1 {
+    text-align: center;
+}
+
+.fleur {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.fleur label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    margin-right: 25px;
+}
+
+.fleur-checkbox {
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.fleur input,
+.fleur select,
+.fleur textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.fleur-checkbox {
+    margin-bottom: 20px;
+}
+
+#contact button {
+    display: block;
+    margin: 0 auto;         /* Centre le bouton Envoyer */
+    background-color: #1f5c24;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#contact button:hover {
+    background-color: #16421a;
+}
+
+.fleur-checkbox {
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+#realisations {
+    margin: 30px 0;
+}
+
+.mosaique {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colonnes égales */
+    grid-auto-rows: 220px;                 /* Hauteur de base d'une ligne */
+    gap: 15px;                             /* Espace entre les photos */
+    margin-top: 20px;
+}
+
+.mosaique img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   /* Remplit toute la case sans déformer la photo */
+    border-radius: 5px;  /* Coins légèrement arrondis (optionnel) */
+}
+
+/* Effet mosaïque : certaines photos prennent plus de place */
+.mosaique img.grande {
+    grid-row: span 2;    /* Prend 2 lignes en hauteur */
+}
+
+.mosaique img.large {
+    grid-column: span 2; /* Prend 2 colonnes en largeur */
+}
+
+/* =========================================
+   ADAPTATION MOBILE & TABLETTE (RESPONSIVE)
+   ========================================= */
+
+/* --- 1. POUR TABLETTES (écrans jusqu'à 900px) --- */
+@media (max-width: 900px) {
+    body {
+        margin: 0 15px; /* Évite que le contenu touche les bords de l'écran */
+    }
+
+    /* La mosaïque passe de 3 à 2 colonnes sur tablette */
+    .mosaique {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* --- 2. POUR TÉLÉPHONES MOBILES (écrans jusqu'à 600px) --- */
+@media (max-width: 600px) {
+    
+    /* Menu de navigation : empile les liens verticalement ou les centre proprement */
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 15px 0;
+    }
+
+    /* Page Entreprise : passe les photos et descriptions en 1 seule colonne */
+    #photo-equipe,
+    #description-employer {
+        grid-template-columns: 1fr;
+    }
+
+    /* Page Réalisations : passe la mosaïque en 1 seule colonne */
+    .mosaique {
+        grid-template-columns: 1fr;
+        grid-auto-rows: 250px;
+    }
+
+    /* Annule les tailles doubles sur mobile pour éviter les décalages */
+    .mosaique img.grande,
+    .mosaique img.large {
+        grid-row: span 1;
+        grid-column: span 1;
+    }
+
+    /* Page Contact : adapte la largeur du formulaire à l'écran du téléphone */
+    #contact {
+        width: 100%;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+
+    /* Titres un peu plus petits sur mobile */
+    h1 {
+        font-size: 1.6rem;
+    }
+}

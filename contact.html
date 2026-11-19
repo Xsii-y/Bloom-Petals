@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="icon" type="image/x-icon" href="ico/fleur.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Bloom Petals</title>
+</head>     
+    <header>
+        <a href="index.html">Accueil</a>
+        <a href="entreprise.html">Entreprise</a>
+        <a href="realisations.html">Réalisations</a>
+        <a href="contact.html">Contact</a>
+
+    </header>
+<body> 
+    <main>
+        <section id="contact">
+            <h1>Contactez-nous</h1>
+            <form action="#" method="post">
+
+                <div class="fleur">
+                    <label for="civilite">Civilité :</label>
+                    <select id="civilite" name="civilite" required>
+                        <option value="">-- Choisissez --</option>
+                        <option value="mme">Madame</option>
+                        <option value="mr">Monsieur</option>
+                        <option value="autre">Autre</option>
+                    </select>
+                </div>
+
+                <div class="fleur">
+                    <label for="nom">Nom :</label>
+                    <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+                </div>
+
+                <div class="fleur">
+                    <label for="prenom">Prénom :</label>
+                    <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required>
+                </div>
+
+                <div class="fleur">
+                    <label for="adresse">Adresse :</label>
+                    <textarea id="adresse" name="adresse" placeholder="Numero, rue, code postal, ville" required></textarea>
+                </div>
+
+                <div class="fleur-checkbox">
+                    <input type="checkbox" id="confidentialite" name="confidentialite" required>
+                    <label for="confidentialite">J'accepte la politique de confidentialité de l'entreprise.</label>
+                </div>
+
+                <button type="submit">Envoyer</button>
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>2026 Bloom Petals. Tous droits réservés.</p>
+
+        <div class="certifications">
+    <img src="images/CE.png" alt="Certification Européenne">
+    <img src="images/FSC.png" alt="Certification FSC">
+  </div>
+
+    </footer>
+   
+</body>
+
+</html>
