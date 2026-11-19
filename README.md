@@ -10,7 +10,7 @@ Site vitrine réalisé dans le cadre de ma formation en développement web à **
 ## 📸 Aperçu du site
 
 ### Page d'accueil
-![Aperçu de la page d'accueil](images/cap1)
+![Aperçu de la page d'accueil](images/cap1.png)
 
 ---
 
