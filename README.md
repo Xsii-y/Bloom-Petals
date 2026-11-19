@@ -12,6 +12,12 @@ Site vitrine réalisé dans le cadre de ma formation en développement web à **
 ### Page d'accueil
 ![Aperçu de la page d'accueil](images/cap1.png)
 
+### Autre Pages
+![Aperçu de la page Entreprise](images/cap2.png)
+
+![Aperçu de la page Réalisations](images/cap3.png)
+
+![Aperçu de la page Contact](images/cap4.png)
 ---
 
 ## 📄 Pages et fonctionnalités
